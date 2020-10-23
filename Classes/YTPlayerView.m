@@ -679,9 +679,9 @@ decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
   if (ytMatch || adMatch || oauthMatch || staticProxyMatch || syndicationMatch) {
     return YES;
   } else {
-    [[UIApplication sharedApplication] openURL:url
-                                       options:@{UIApplicationOpenURLOptionUniversalLinksOnly: @NO}
-                             completionHandler:nil];
+//    [[UIApplication sharedApplication] openURL:url
+//                                       options:@{UIApplicationOpenURLOptionUniversalLinksOnly: @NO}
+//                             completionHandler:nil];
     return NO;
   }
 }
